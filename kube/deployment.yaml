@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: stream-chat-app
+spec: 
+    replicas: 1
+    selector:
+        matchLabels:
+            app: stream-chat-app
+    template:
+        metadata:
+            labels:
+                app: stream-chat-app
+        spec: 
+            containers:
+                - name: app
+                  image: ezesundayeze/stream-chat-app
+                  ports:
+                    - containerPort: 3001
+                  imagePullPolicy: Always
