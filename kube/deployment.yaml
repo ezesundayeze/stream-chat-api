@@ -16,5 +16,5 @@ spec:
                 - name: app
                   image: ezesundayeze/stream-chat-app
                   ports:
-                    - containerPort: 3001
+                    - containerPort: 8000
                   imagePullPolicy: Always

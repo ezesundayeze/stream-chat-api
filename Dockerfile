@@ -7,3 +7,4 @@ RUN yarn --build-from-source install bcrypt
 RUN yarn add bcrypt -f --build-from-source
 EXPOSE 8080
 CMD ["yarn", "start"]
+

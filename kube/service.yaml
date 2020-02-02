@@ -6,6 +6,6 @@ spec:
   selector:
     app: stream-chat-app
   ports:
-    - port: 3001
-      targetPort: 3001
+    - port: 8000
+      targetPort: 8000
   type: LoadBalancer
